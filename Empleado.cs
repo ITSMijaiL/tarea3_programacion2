@@ -13,8 +13,8 @@ namespace tarea3_programacion2
     internal class Empleado : MiembroDeLaComunidad
     {
         tipo_empleado tipo_de_empleado;
-        public Empleado(string _nombre, string _apellidos, string _cedula, int _edad, bool es_administrativo) 
-            : base(_nombre, _apellidos, _cedula, _edad) {
+        public Empleado(string _nombre, string _apellidos, int _edad, bool es_administrativo) 
+            : base(_nombre, _apellidos, _edad) {
             tipo_de_empleado = es_administrativo ? tipo_empleado.Administrativo : tipo_empleado.Docente;
         }
     }

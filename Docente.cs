@@ -14,8 +14,8 @@ namespace tarea3_programacion2
     internal class Docente : Empleado
     {
         tipo_docente tipo_de_docente;
-        public Docente(string _nombre, string _apellidos, string _cedula, int _edad, bool es_administrador)
-            :base(_nombre, _apellidos, _cedula, _edad, es_administrativo: false) {
+        public Docente(string _nombre, string _apellidos, int _edad, bool es_administrador)
+            :base(_nombre, _apellidos, _edad, es_administrativo: false) {
             tipo_de_docente = es_administrador ? tipo_docente.Administrador : tipo_docente.Maestro;
         }
     }
